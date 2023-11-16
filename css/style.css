@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pagetitle{
+    color: rgb(238, 187, 119);
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+nav{
+    display: flex;
+    background-color: #212D40 ;
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+.links a{
+    margin-left: 1vw;
+}
+.icon{
+    background: url(../images/sprite3.png) no-repeat;
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+    float: right;
+}
+#twitter{
+    background-position: -66px -72px;
+}
+#fb{
+    background-position: -439px -146px;
+}
+#yt{
+    background-position: -439px -221px;
+}
+#tumblr{
+    background-position: -216px -146px;
+}
+@media screen and (max-width: 600px){
+  nav{
+    position: relative;
+    background-color:#364156 ;
+  }  
+  .pagetitle{
+    color: rgb(238, 187, 119);
+    padding: 0.5vw;
+  }
+  .links{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    background-color: #7D4E57;
+    min-width: 100vw;
+    transition: .2s;
+  }
+  .links a{
+    color: bisque;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: block;
+  }
+  .links a:hover{background-color: beige;}
+  nav:hover .links{display: block;}
+  nav:hover .pagetitle{background-color: #11151C;}
+}
